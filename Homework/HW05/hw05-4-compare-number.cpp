@@ -28,28 +28,23 @@
 #include <stdio.h>
 
 int main() {
-    int number1, number2;
+    int Num1, Num2;
 
-    // รับค่าจากผู้ใช้สองครั้ง
-    printf("Input 1:\n");
-    scanf("%d", &number1);
+    printf("Input[1] : ");
+    scanf("%d", &Num1);
+    printf("Input[2] : ");
+    scanf("%d", &Num2);
 
-    printf("Input 2:\n");
-    scanf("%d", &number2);
-
-    // เปรียบเทียบค่าและแสดงผลลัพธ์
-    if (number1 < number2) {
-        printf("Number1 lower than Number2\n");
-    } else if (number1 > number2) {
-        printf("Number1 greater than Number2\n");
-    } else {
-        printf("Number1 equal to Number2\n");
+    if (Num1 > Num2) {
+        printf( "Number1 greater than Number2" );
+    } 
+    else if (Num1 < Num2 ) {
+        printf( "Number1 lower than Number2" );
     }
-
+    else 
+        printf( "Number1 equal Number2" );
     return 0;
 }
-
-
 
 
 
